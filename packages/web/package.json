@@ -1,0 +1,59 @@
+{
+  "name": "@loyalops/web",
+  "version": "0.0.1-beta.2",
+  "description": "Embeddable React SDK for LoyalOps loyalty programs",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "publish:package": "npm run build && npm publish --access public"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loyalops/web"
+  },
+  "keywords": [
+    "loyalty",
+    "missions",
+    "rewards",
+    "react",
+    "sdk",
+    "embed"
+  ]
+}
