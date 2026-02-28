@@ -1,6 +1,6 @@
 {
   "name": "@loyalops/react",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.3",
   "description": "React SDK for LoyalOps loyalty programs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -33,7 +33,7 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@loyalops/web-core": "*",
+    "@loyalops/web-core": "^0.0.1-beta.3",
     "@tanstack/react-query": "^5.90.21"
   },
   "devDependencies": {

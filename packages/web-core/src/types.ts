@@ -4,6 +4,7 @@ export type MissionType =
     | "connect_discord"
     | "connect_telegram"
     | "connect_twitch"
+    | "connect_steam"
     | "x_follow"
     | "x_like"
     | "x_retweet"
@@ -15,6 +16,7 @@ export type MissionType =
     | "twitch_follow"
     | "twitch_subscribe"
     | "mailchimp_subscribe"
+    | "steam_wishlist"
     | "link_visit"
     | "quiz"
     | "redeemable_code";
