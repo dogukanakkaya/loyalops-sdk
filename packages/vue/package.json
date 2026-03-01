@@ -1,6 +1,6 @@
 {
     "name": "@loyalops/vue",
-    "version": "0.0.1-beta.3",
+    "version": "0.1.0-beta.1",
     "description": "Vue 3 SDK for LoyalOps loyalty programs",
     "type": "module",
     "main": "./dist/index.cjs",
@@ -26,22 +26,26 @@
         "dev": "tsup --watch",
         "typecheck": "tsc --noEmit",
         "clean": "rm -rf dist",
-        "publish:package": "npm run build && npm publish --access public"
+        "publish:package": "npm run build && npm publish --access public --tag=latest"
     },
     "peerDependencies": {
         "vue": ">=3.3.0"
     },
     "dependencies": {
-        "@loyalops/web-core": "^0.0.1-beta.3",
         "@tanstack/vue-query": "^5.90.0"
     },
     "devDependencies": {
+        "@loyalops/web-core": "^0.1.0-beta.1",
         "@vue/tsconfig": "^0.5.0",
         "tsup": "^8.5.1",
         "typescript": "^5.7.0",
         "vue": "^3.5.0"
     },
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loyalops-sdk/vue"
+    },
     "keywords": [
         "loyalty",
         "missions",

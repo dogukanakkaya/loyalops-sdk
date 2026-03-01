@@ -9,7 +9,7 @@ export function getMissionActionUrl(type: MissionType, config: Record<string, un
         case "x_comment":
             return (config.tweetUrl as string) ?? null;
         case "google_subscribe":
-            return `https://youtube.com/channel/${config.channelId}`;
+            return (config.channelUrl as string) ?? null;
         case "google_comment":
             return (config.videoUrl as string) ?? null;
         case "telegram_join":

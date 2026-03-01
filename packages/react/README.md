@@ -140,7 +140,7 @@ const { data: balances } = useBalances({
 
 ### `useMultipliers()`
 
-Returns a TanStack Query result with `UserMultiplier[]` for the current user
+Returns a TanStack Query result with `UserMultiplier[]` for the current user.
 
 ## License
 

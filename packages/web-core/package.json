@@ -1,6 +1,6 @@
 {
     "name": "@loyalops/web-core",
-    "version": "0.0.1-beta.3",
+    "version": "0.1.0-beta.1",
     "description": "Framework-agnostic core for the LoyalOps SDK",
     "type": "module",
     "main": "./dist/index.cjs",
@@ -25,13 +25,18 @@
         "build": "tsup",
         "dev": "tsup --watch",
         "typecheck": "tsc --noEmit",
-        "clean": "rm -rf dist"
+        "clean": "rm -rf dist",
+        "publish:package": "npm run build && npm publish --access public --tag=latest"
     },
     "devDependencies": {
         "tsup": "^8.5.1",
         "typescript": "^5.9.3"
     },
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loyalops-sdk/web-core"
+    },
     "keywords": [
         "loyalty",
         "missions",

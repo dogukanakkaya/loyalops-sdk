@@ -1,8 +1,4 @@
 export const TENANT_PUBLIC_KEY = import.meta.env.VITE_TENANT_PUBLIC_KEY;
 export const USER_TOKEN = import.meta.env.VITE_USER_TOKEN;
-export const REDIRECT_URL = "http://localhost:5173";
-export const API_BASE_URL = "http://localhost:8000/v1";
-
-// export const TENANT_PUBLIC_KEY = "9072a90ff53ec2f73078f0f1d949a2d4fec622c56f98b152a92f790320c991b1";
-// export const USER_TOKEN =
-//     "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOiIwNjk0YWMxOC1lODQ1LTRiMGYtOGIwZS0yNzg2YmE3YzY0YzciLCJzdWIiOiIyODk0YjgyNS00NjM4LTQ2YjgtOGY0Ny05NWVkOTVjYTFlZTkiLCJqdGkiOiIwYzNlZTNmMy02ZWJmLTQ2MjItYTE2ZC0xMWI0Y2IzN2M1NTYiLCJpYXQiOjE3NzE3NzE5NTAsImV4cCI6MTc3NDM2Mzk1MH0.xMtB4r467vGADyzKWYcOv494xz3HVfaTdRb8bYb7nqk";
+export const REDIRECT_URL = import.meta.env.VITE_REDIRECT_URL;
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
