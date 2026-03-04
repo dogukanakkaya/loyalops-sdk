@@ -6,6 +6,9 @@ export { useMissions } from "./hooks/use-missions";
 export { useSubmissions, useSubmitMission, useConnectPlatform } from "./hooks/use-submissions";
 export { useBalances } from "./hooks/use-balances";
 export { useMultipliers } from "./hooks/use-multipliers";
+export { useRank } from "./hooks/use-rank";
+export { useLeaderboard } from "./hooks/use-leaderboard";
+export type { UseLeaderboardOptions } from "./hooks/use-leaderboard";
 
 // Re-export everything from core for convenience
 export type {
@@ -25,5 +28,8 @@ export type {
     LoyalOpsConfig,
     UserBalance,
     UserMultiplier,
+    UserRank,
+    LeaderboardEntry,
+    Leaderboard,
 } from "@loyalops/web-core";
 export { LoyalOpsClient, LoyalOpsApiError } from "@loyalops/web-core";

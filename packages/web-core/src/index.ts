@@ -18,4 +18,7 @@ export type {
     LoyalOpsConfig,
     UserBalance,
     UserMultiplier,
+    UserRank,
+    LeaderboardEntry,
+    Leaderboard,
 } from "./types";

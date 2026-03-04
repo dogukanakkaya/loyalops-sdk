@@ -139,6 +139,35 @@ const { data: balances } = useBalances({
 
 Returns a TanStack Query result with `UserMultiplier[]` for the current user.
 
+### `useRank({ currencyIds? })`
+
+Returns a TanStack Query result with `UserRank[]` — the current user's rank per
+currency.
+
+```ts
+const { data: ranks } = useRank();
+// or filter by specific currencies:
+const { data: ranks } = useRank({ currencyIds: ["currency-uuid-1"] });
+```
+
+### `useLeaderboard({ currencyIds?, skip?, limit? })`
+
+Returns a TanStack Query result with `Leaderboard` — a map of
+`currencyId → LeaderboardEntry[]` sorted by rank.
+
+```ts
+const { data: leaderboard } = useLeaderboard();
+// with pagination and currency filter:
+const { data: leaderboard } = useLeaderboard({
+    currencyIds: ["currency-uuid-1"],
+    skip: 0,
+    limit: 10,
+});
+
+// access entries for a specific currency:
+const entries = leaderboard.value?.["currency-uuid-1"] ?? [];
+```
+
 ## License
 
 MIT

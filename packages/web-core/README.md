@@ -60,7 +60,8 @@ All TypeScript types are re-exported for convenience:
 `Mission`, `MissionSubmission`, `MissionReward`, `MissionType`, `MissionStatus`,
 `MissionFrequency`, `SubmissionStatus`, `RewardType`, `CurrencyRewardConfig`,
 `MultiplierRewardConfig`, `ExternalRewardConfig`, `Currency`, `Platform`,
-`LoyalOpsConfig`, `UserBalance`, `UserMultiplier`.
+`LoyalOpsConfig`, `UserBalance`, `UserMultiplier`, `UserRank`,
+`LeaderboardEntry`, `Leaderboard`.
 
 ## License
 

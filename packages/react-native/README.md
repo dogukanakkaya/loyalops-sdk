@@ -56,8 +56,10 @@ All hooks from `@loyalops/react` are available:
 import {
     useBalances,
     useConnectPlatform,
+    useLeaderboard,
     useMissions,
     useMultipliers,
+    useRank,
     useSubmissions,
     useSubmitMission,
 } from "@loyalops/react-native";
@@ -67,6 +69,8 @@ function MissionsScreen() {
     const { data: submissions } = useSubmissions();
     const { data: balances } = useBalances();
     const { data: multipliers } = useMultipliers();
+    const { data: ranks } = useRank();
+    const { data: leaderboard } = useLeaderboard();
     const { mutate: submit } = useSubmitMission();
     const connect = useConnectPlatform({ redirectUrl: "myapp://redirect" });
 

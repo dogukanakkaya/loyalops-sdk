@@ -67,6 +67,7 @@ export interface Mission {
     endsAt: string;
     status: MissionStatus;
     rewards?: MissionReward[];
+    steps?: Omit<Mission, 'steps'>[];
 }
 
 export type SubmissionStatus = "pending" | "approved" | "rejected";
@@ -119,3 +120,18 @@ export interface LoyalOpsConfig {
     /** API base URL. Defaults to https://api.loyalops.com/v1 */
     baseUrl?: string;
 }
+
+export interface UserRank {
+    currencyId: string;
+    rank: number;
+    balance: number;
+}
+
+export interface LeaderboardEntry {
+    userId: string;
+    email: string;
+    balance: number;
+    rank: number;
+}
+
+export type Leaderboard = Record<string, LeaderboardEntry[]>;
