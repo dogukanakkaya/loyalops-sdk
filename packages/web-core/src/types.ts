@@ -19,7 +19,8 @@ export type MissionType =
     | "steam_wishlist"
     | "link_visit"
     | "quiz"
-    | "redeemable_code";
+    | "redeemable_code"
+    | "chain";
 
 export type MissionStatus = "draft" | "active" | "paused" | "archived";
 

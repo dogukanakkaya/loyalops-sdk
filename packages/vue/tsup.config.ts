@@ -3,7 +3,7 @@ import { defineConfig } from "tsup";
 export default defineConfig({
     entry: ["src/index.ts"],
     format: ["esm", "cjs"],
-    dts: true,
+    dts: { resolve: ["@loyalops/web-core"] },
     sourcemap: true,
     clean: true,
     external: ["vue", "@tanstack/vue-query"],
