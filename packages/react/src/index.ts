@@ -9,6 +9,7 @@ export { useMultipliers } from "./hooks/use-multipliers";
 export { useRank } from "./hooks/use-rank";
 export { useLeaderboard } from "./hooks/use-leaderboard";
 export type { UseLeaderboardOptions } from "./hooks/use-leaderboard";
+export { useNonce } from "./hooks/use-nonce";
 
 // Re-export everything from core for convenience
 export type {
@@ -31,5 +32,6 @@ export type {
     UserRank,
     LeaderboardEntry,
     Leaderboard,
+    NonceResponse,
 } from "@loyalops/web-core";
 export { LoyalOpsClient, LoyalOpsApiError } from "@loyalops/web-core";

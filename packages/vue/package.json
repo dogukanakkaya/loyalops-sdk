@@ -1,6 +1,6 @@
 {
     "name": "@loyalops/vue",
-    "version": "0.1.0-beta.5",
+    "version": "0.1.0-beta.6",
     "description": "Vue 3 SDK for LoyalOps loyalty programs",
     "type": "module",
     "main": "./dist/index.cjs",
@@ -35,7 +35,7 @@
         "@tanstack/vue-query": "^5.90.0"
     },
     "devDependencies": {
-        "@loyalops/web-core": "^0.1.0-beta.5",
+        "@loyalops/web-core": "^0.1.0-beta.6",
         "@vue/tsconfig": "^0.5.0",
         "tsup": "^8.5.1",
         "typescript": "^5.7.0",

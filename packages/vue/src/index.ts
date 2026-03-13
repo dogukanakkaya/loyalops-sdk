@@ -9,6 +9,7 @@ export { useMultipliers } from "./composables/use-multipliers";
 export { useRank } from "./composables/use-rank";
 export { useLeaderboard } from "./composables/use-leaderboard";
 export type { UseLeaderboardOptions } from "./composables/use-leaderboard";
+export { useNonce } from "./composables/use-nonce";
 
 // Re-export core types for convenience
 export type {
@@ -31,5 +32,6 @@ export type {
     UserRank,
     LeaderboardEntry,
     Leaderboard,
+    NonceResponse,
 } from "@loyalops/web-core";
 export { LoyalOpsClient, LoyalOpsApiError } from "@loyalops/web-core";

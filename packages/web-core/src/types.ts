@@ -5,6 +5,7 @@ export type MissionType =
     | "connect_telegram"
     | "connect_twitch"
     | "connect_steam"
+    | "connect_wallet"
     | "x_follow"
     | "x_like"
     | "x_retweet"
@@ -136,3 +137,9 @@ export interface LeaderboardEntry {
 }
 
 export type Leaderboard = Record<string, LeaderboardEntry[]>;
+
+export type WalletType = "evm" | "sol";
+
+export interface NonceResponse {
+    message: string;
+}

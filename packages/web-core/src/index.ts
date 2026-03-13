@@ -21,4 +21,6 @@ export type {
     UserRank,
     LeaderboardEntry,
     Leaderboard,
+    WalletType,
+    NonceResponse,
 } from "./types";

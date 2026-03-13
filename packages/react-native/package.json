@@ -1,6 +1,6 @@
 {
     "name": "@loyalops/react-native",
-    "version": "0.1.0-beta.5",
+    "version": "0.1.0-beta.6",
     "description": "React Native SDK for LoyalOps loyalty programs",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
@@ -31,11 +31,11 @@
         "react": ">=18.0.0"
     },
     "dependencies": {
-        "@loyalops/web-core": "^0.1.0-beta.5",
+        "@loyalops/web-core": "^0.1.0-beta.6",
         "@tanstack/react-query": "^5.90.21"
     },
     "devDependencies": {
-        "@loyalops/react": "^0.1.0-beta.3",
+        "@loyalops/react": "^0.1.0-beta.6",
         "@types/react": "^19.0.0",
         "react": "^19.0.0",
         "tsup": "^8.5.1",
