@@ -49,7 +49,7 @@
                         <!-- Rewards -->
                         <template v-for="r in mission.rewards" :key="r.id">
                             <span v-if="r.type === 'currency' && r.currency" class="inline-flex items-center gap-1 text-xs font-semibold text-amber-600 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
-                                🪙 {{ currencyAmount(r.config) }} {{ r.currency.symbol ?? r.currency.name }}
+                                🪙 {{ currencyValue(r.config) }} {{ r.currency.symbol ?? r.currency.name }}
                             </span>
                             <span v-else-if="r.type === 'multiplier'" class="inline-flex items-center gap-1 text-xs font-semibold text-violet-600 bg-violet-50 border border-violet-200 px-2 py-0.5 rounded-full">
                                 ⚡ {{ multiplierValue(r.config) }}x
@@ -91,6 +91,6 @@ const isCompleted = computed(() => props.submission?.status === "approved");
 const isPending = computed(() => props.submission?.status === "pending");
 const icon = computed(() => MISSION_TYPE_ICONS[props.mission.type] ?? "");
 
-const currencyAmount = (config: unknown) => (config as { amount?: number } | null)?.amount;
+const currencyValue = (config: unknown) => (config as { value?: number } | null)?.value;
 const multiplierValue = (config: unknown) => (config as { value?: number } | null)?.value;
 </script>

@@ -35,7 +35,7 @@ export type MissionFrequency =
 export type RewardType = "currency" | "multiplier" | "external";
 
 export interface CurrencyRewardConfig {
-    amount: number;
+    value: number;
 }
 
 export interface MultiplierRewardConfig {

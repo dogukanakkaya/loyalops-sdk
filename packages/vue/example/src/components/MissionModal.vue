@@ -71,7 +71,7 @@
                             <template v-for="r in mission.rewards" :key="r.id">
                                 <div v-if="r.type === 'currency' && r.currency" class="flex items-center gap-1.5 text-sm font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-full">
                                     <span>🪙</span>
-                                    <span>{{ currencyAmount(r.config) }} {{ r.currency.symbol ?? r.currency.name }}</span>
+                                    <span>{{ currencyValue(r.config) }} {{ r.currency.symbol ?? r.currency.name }}</span>
                                 </div>
                                 <div v-else-if="r.type === 'multiplier'" class="flex items-center gap-1.5 text-sm font-semibold text-violet-700 bg-violet-50 border border-violet-200 px-3 py-1.5 rounded-full">
                                     <span>⚡</span>
@@ -162,7 +162,7 @@ const platformLabel = computed(() => {
 });
 const mutationError = computed(() => submitMutation.error.value ?? connectMutation.error.value);
 
-const currencyAmount = (config: unknown) => (config as { amount?: number } | null)?.amount;
+const currencyValue = (config: unknown) => (config as { value?: number } | null)?.value;
 const multiplierValue = (config: unknown) => (config as { value?: number } | null)?.value;
 const externalDescription = (config: unknown) =>
     (config as { description?: string } | null)?.description ?? "External reward";

@@ -128,11 +128,11 @@ function MissionModal({
                         <View style={modal.rewardsRow}>
                             {mission.rewards.map((r) => {
                                 if (r.type === 'currency' && r.currency) {
-                                    const amount = (r.config as { amount: number })?.amount;
+                                    const value = (r.config as { value: number })?.value;
                                     return (
                                         <View key={r.id} style={modal.rewardPill}>
                                             <Text style={modal.rewardPillText}>
-                                                🪙 {amount} {r.currency.symbol ?? r.currency.name}
+                                                🪙 {value} {r.currency.symbol ?? r.currency.name}
                                             </Text>
                                         </View>
                                     );

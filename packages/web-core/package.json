@@ -1,6 +1,6 @@
 {
     "name": "@loyalops/web-core",
-    "version": "0.1.0-beta.6",
+    "version": "0.1.0-beta.7",
     "description": "Framework-agnostic core for the LoyalOps SDK",
     "type": "module",
     "main": "./dist/index.cjs",

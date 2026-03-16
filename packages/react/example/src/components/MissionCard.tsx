@@ -78,10 +78,10 @@ export function MissionCard({ mission, submission, onClick }: Props) {
                             {/* Rewards */}
                             {mission.rewards?.map((r) => {
                                 if (r.type === "currency" && r.currency) {
-                                    const amount = (r.config as { amount: number })?.amount;
+                                    const value = (r.config as { value: number })?.value;
                                     return (
                                         <span key={r.id} className="inline-flex items-center gap-1 text-xs font-semibold text-amber-600 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
-                                            🪙 {amount} {r.currency.symbol ?? r.currency.name}
+                                            🪙 {value} {r.currency.symbol ?? r.currency.name}
                                         </span>
                                     );
                                 }

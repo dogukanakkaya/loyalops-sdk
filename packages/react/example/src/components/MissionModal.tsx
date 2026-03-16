@@ -146,11 +146,11 @@ export function MissionModal({ mission, submission, onClose }: Props) {
                             <div className="flex flex-wrap gap-2">
                                 {mission.rewards.map((r) => {
                                     if (r.type === "currency" && r.currency) {
-                                        const amount = (r.config as { amount: number })?.amount;
+                                        const value = (r.config as { value: number })?.value;
                                         return (
                                             <div key={r.id} className="flex items-center gap-1.5 text-sm font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-full">
                                                 <span>🪙</span>
-                                                <span>{amount} {r.currency.symbol ?? r.currency.name}</span>
+                                                <span>{value} {r.currency.symbol ?? r.currency.name}</span>
                                             </div>
                                         );
                                     }

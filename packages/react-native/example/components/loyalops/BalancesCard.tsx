@@ -12,7 +12,7 @@ function BalanceRow({ balance }: { balance: UserBalance }) {
                 </View>
                 <Text style={styles.currencyName}>{balance.currency.name}</Text>
             </View>
-            <Text style={styles.amount}>
+            <Text style={styles.value}>
                 {balance.balance.toLocaleString()} {label}
             </Text>
         </View>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         color: '#334155',
     },
-    amount: {
+    value: {
         fontSize: 14,
         fontWeight: '700',
         color: '#1e293b',
